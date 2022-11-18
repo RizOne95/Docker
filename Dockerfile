@@ -7,4 +7,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD [ "python", "./app.py" "runserver 0.0.0.0:8080" ]
+ENTRYPOINT python ./app.py runserver 0.0.0.0:8080
